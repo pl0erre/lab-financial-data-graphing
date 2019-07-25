@@ -1,8 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,600,700&display=swap');
+
+* {
+  font-family: Asap;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.index-main {
+  width: 30%;
+  padding: 20px;
+  margin: 20px auto 0;
+  background-color: rgba(173, 216, 230, 0.335);
+  /* border:  */
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-item-1 {
+  flex: 2;
+}
+.info-item-2 {
+  flex: 1;
+}
+
+#error-message {
+  display: none;
+  background: #F02B63;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+  margin: 0px 50px;
+}
+
+h3 {
+  margin: 5px 50px 0 ;
+}
+
+p {
+  margin: 15px 50px;
+  width: 70%;
+}
+
+button {
+  font-size: 1rem;
+  height: 40px;
+  width: 20%;
+  margin: 10px 0;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65);
+}
+
+#myChart {
+  max-width: 100%;
+  /* margin: 0 auto; */
+}
+
+.date-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.date-set {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 30px;
+  padding: 5px;
+  background-color: rgba(205, 218, 223, 0.739);
+  border: 3px solid rgba(109, 105, 104, 0.075);
+}
+
+label, input {
+  padding: 5px;
+}
+
+label {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.time-span {
+  color: rgb(184, 141, 34);
+}
+
+
+/* // === NAV BAR === */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(30, 30, 53);
+  color: white;
+  width: 100%;
+  padding: 5px 0;
+  border: 1px solid rgb(78, 78, 78);
+}
+nav a {
+  margin: 0; 
+  padding: 0;
+  color: rgba(255, 255, 255, 0.733);
+
+}
+
+nav img {
+  padding: 0 4px;
+}
+
+.nav-home-link {
+  border: 1px solid rgb(78, 78, 78);
+  background-color: rgba(181, 255, 239, 0.479);
+  margin: 0 20px;
+}
+
+.nav-link {
+  padding: 6px 20px;
+  margin: 2px;
+  background-color: rgba(245, 245, 245, 0.431);
+  border: 1px solid rgb(78, 78, 78);
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* // === FOOTER === */
+footer {
+  background-color: rgb(30, 30, 53);
+  width: 100%;
+  color: white;
+  font-size: 1.8rem;
+}
+footer p {
+  padding: 10px; 
 }

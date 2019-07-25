@@ -1,13 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title> {{title}} </title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js" integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <h1> {{title}} </h1>
-    <p>Welcome to  {{title}} </p>
-  </body>
-  <script src="/javascripts/financial-data.js" charset="utf-8"></script>
-</html>
+<main class="index-main">
+  <div class="info-container">
+    <div class="info-item-1">
+      <h1>Welcome</h1>
+      <h3>To Bitcoin Price Index</h3>
+      <p>Select a start and end date to track the Bitcoin value. </p>
+    </div>
+    <div class="info-item-2">
+        {{!-- <div id="error-message">Enter a valid date</div> --}}
+    </div>
+  </div>
+
+  <div class="date-container">
+    <div class="date-set">
+      <label for="start-date">From<span class="time-span"> I-----</span></label>
+      <input id="start-date" name="start-date" type="date" placeholder="From" min="2019-">
+    </div>
+    <div class="date-set">
+      <label for="end-date"><span class="time-span">-----I </span>To</label>
+      <input id="end-date" name="end-date" type="date" placeholder="To">  
+    </div>
+    <button onclick="drawChart()">Draw Chart</button>
+  </div>
+  {{>chart}}
+</main>
